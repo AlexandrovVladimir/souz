@@ -1,0 +1,117 @@
+/* STUDIO SECTION */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+
+
+.studio-about
+  background-color: #fff
+  position: fixed
+  left: -100%
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+  visibility: hidden
+  transition: all 0.5s linear
+  z-index: 4
+  &-active
+    left: 0
+    opacity: 1
+    visibility: visible
+    overflow-y: scroll
+  &__row
+    position: relative
+    padding: 1rem
+    &:after
+      content: ''
+      display: table
+      clear: both
+    &-yellow
+      background-color: #fdb814
+  &__close
+    background: #383838 url("../img/close.svg") no-repeat center
+    border-radius: 50%
+    display: flex
+    width: 50px
+    height: 50px
+    float: right
+  &__title
+    color: #ffffff
+    font-family: $proba-pro-bold
+    font-size: 70px
+    line-height: 50px
+    letter-spacing: 0.21px
+    text-align: center
+  &__description
+    color: #ffffff
+    font-size: 32px
+    line-height: 48px
+    font-family: $proba-pro-regular
+    max-width: 60%
+    margin: 60px auto
+    text-align: center
+    position: relative
+  .studio-about-icon
+    &-vinni
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+/* studio */
+
+.studio
+  background-color: #f3762e
+  &__container
+    width: 1200px
+    margin: auto
+    min-height: 300px
+    position: relative
+  &__title
+    color: #ffffff
+    font-family: $proba-pro-bold
+    font-size: 70px
+    line-height: 50px
+    letter-spacing: 0.21px
+    padding-top: 120px
+    margin-bottom: 60px
+    text-align: center
+  &__description
+    max-width: 70%
+    margin: auto
+    text-align: center
+    position: relative
+  &__text
+    color: #ffffff
+    font-size: 32px
+    line-height: 48px
+    font-family: $proba-pro-regular
+  &__link
+    color: #383838
+    font-family: $proba-pro-bold
+    font-size: 18px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: 1.5px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 80px auto 0
+    width: 300px
+    height: 50px
+    border-radius: 45px
+    background-color: #ffffff
+  &-icon
+    position: relative
+    height: 306px
+    &-bird
+      position: absolute
+      left: 0
+      bottom: 0
+    &-karlson
+      position: absolute
+      right: 15px
+      bottom: 0
+/*/ studio */

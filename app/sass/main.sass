@@ -1,0 +1,91 @@
+/* default styles for all pages */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+@import 'header.sass'
+@import 'news.sass'
+@import 'studio.sass'
+
+@font-face
+	font-family: "ProbaPro-Regular"
+	src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff")
+	src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2")
+	font-style: normal
+	font-weight: 400
+
+@font-face
+  font-family: "ProbaPro-Bold"
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff")
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2")
+  font-style: normal
+  font-weight: 700
+
+@font-face
+  font-family: "ProbaPro-Medium"
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff")
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2")
+  font-style: normal
+  font-weight: 500
+
+*
+  box-sizing: border-box
+  &:hover, &:active, &:focus
+      outline: none
+
+html
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 16px
+  height: 100%
+
+.body
+  margin: 0
+  padding: 0
+  &-locked
+    overflow-y: hidden
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+select::-ms-expand
+  display: none
+
+a
+  text-decoration: none
+
+.slick-dots
+  display: flex
+  position: absolute
+  left: 50%
+  bottom: 40px
+  transform: translateX(-50%)
+  li
+    margin: 0 5px
+    button
+      background-color: #383838
+      border-radius: 50%
+      border: none
+      cursor: pointer
+      font-size: 0
+      display: block
+      width: 10px
+      height: 10px
+      opacity: 0.2
+      padding: 0
+      margin: 0
+      &:before
+        display: none
+      &:focus
+        outline: none
+    &.slick-active
+      button
+        opacity: 1
+
+@import "media"

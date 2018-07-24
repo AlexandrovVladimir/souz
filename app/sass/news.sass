@@ -1,0 +1,99 @@
+/* NEWS SECTION */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+/* news */
+
+.news
+  background-color: #4eb748
+  //border-bottom-left-radius: 200px
+  //border-bottom-right-radius: 200px
+  padding-bottom: 160px
+  overflow: hidden
+  position: relative
+  &__orange
+    background-color: #f3762e
+  &__arrows
+    cursor: pointer
+    &-right
+      position: absolute
+      right: -35px
+      transition: all 0.15s linear
+      &:hover
+        right: -10px
+    &-left
+      position: absolute
+      left: -35px
+      transition: all 0.15s linear
+      &:hover
+        left: -10px
+    &-wrap
+      position: relative
+      width: 100%
+  .slick-dots
+    bottom: -15px
+    li 
+      button
+        background-color: #ffffff
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+  .slick-center
+    padding-top: 5rem
+  &__container
+    width: 1200px
+    margin: auto
+    padding: 0 1rem
+  &__title
+    color: #ffffff
+    font-family: $proba-pro-bold
+    font-size: 70px
+    line-height: 50px
+    letter-spacing: 0.21px
+    padding-top: 120px
+    margin-bottom: 60px
+    text-align: center
+  &__item
+    text-align: center
+  &__text
+    &-lighten
+      color: #ffffff
+      display: block
+      font-family: $proba-pro-regular
+      font-size: 20px
+      line-height: 30px
+      opacity: 0.5
+    &-normal
+      color: #ffffff
+      display: block
+      font-family: $proba-pro-medium
+      font-size: 24px
+      font-weight: 500
+      line-height: 30px
+      max-width: 310px
+      margin: auto
+      min-height: 90px
+      word-wrap: break-word
+  &__image
+    margin-bottom: 30px
+    img
+      margin: auto
+  &__arrows
+    width: 100%
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__count
+    color: #ffffff
+    font-size: 24px
+    font-family: $proba-pro-medium
+    line-height: 40px
+    text-align: center
+    .total
+      opacity: 0.5
+/*/ news */

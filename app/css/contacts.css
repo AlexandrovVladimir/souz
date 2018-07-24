@@ -1,0 +1,77 @@
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.contacts {
+  background: url("../img/footer.png") no-repeat 0 100%/cover;
+  min-height: 440px;
+  padding-bottom: 50px; }
+  .contacts__title {
+    font-size: 20px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    color: #fefefe;
+    font-weight: 800;
+    line-height: 1.2;
+    padding-top: 15px;
+    padding-bottom: 70px;
+    text-transform: uppercase; }
+    .contacts__title-red {
+      font-size: 16px;
+      font-family: "MyriadProSemiBold", sans-serif;
+      color: #ff3323;
+      text-transform: uppercase;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      padding-top: 50px; }
+    .contacts__title-default {
+      border-bottom: 2px solid #727272;
+      font-size: 18px;
+      font-family: "AG Book Pro Bold", sans-serif;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      -webkit-transform: scale(1, 1.19);
+          -ms-transform: scale(1, 1.19);
+              transform: scale(1, 1.19); }
+  .contacts__address {
+    font-size: 17px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    color: #ff3323;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    -webkit-transform: scale(1, 1.19);
+        -ms-transform: scale(1, 1.19);
+            transform: scale(1, 1.19); }
+  .contacts__info {
+    font-size: 16px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    -webkit-transform: scale(1, 1.1);
+        -ms-transform: scale(1, 1.1);
+            transform: scale(1, 1.1); }
+  .contacts__mail, .contacts__phone {
+    display: block; }
+    .contacts__mail:hover, .contacts__phone:hover {
+      text-decoration: none; }
+    .contacts__mail img, .contacts__phone img {
+      margin-right: 5px; }
+    .contacts__mail span, .contacts__phone span {
+      display: inline-block;
+      font-size: 17px;
+      font-family: "AG Book Pro Bold", sans-serif;
+      color: white;
+      font-weight: bold;
+      line-height: 1.2;
+      text-transform: uppercase; }
+  .contacts__mail {
+    margin-bottom: 30px; }
+  .contacts__icon {
+    padding-top: 25px; }

@@ -1,0 +1,242 @@
+@media screen and (max-width: 1300px)
+  .gallery
+    .slick-prev
+      left: -45px
+      &:hover
+        left: -35px
+    .slick-next
+      right: -45px
+      &:hover
+        right: -35px
+  .news
+    &__container
+      width: 1000px
+    &__arrows
+      &-left
+        left: -45px
+        &:hover
+          left: -35px
+      &-right
+        right: -45px
+        &:hover
+          right: -35px
+    &__image
+      img
+        width: 280px
+        height: 280px
+@media screen and (max-width: 1200px)
+  .header, .studio
+    &__container
+      width: 991px
+@media screen and (max-width: 1100px)
+  .news
+    &__container
+      width: 900px
+    &__image
+      img
+        width: 220px
+        height: 220px
+@media screen and (max-width: 991px)
+  .studio
+    &__container
+      width: 100%
+      padding: 0 1rem
+  .news
+    &__title
+      margin-bottom: 30px
+    &__count
+      font-size: 18px
+      margin-bottom: 15px
+    &__container
+      width: 80%
+    &__image
+      img
+        width: 304px
+        height: 304px
+    &__arrows
+      &-left
+        left: -20px
+        &:hover
+          left: -15px
+        img
+          width: 50px
+          height: 50px
+      &-right
+        right: -20px
+        &:hover
+          right: -15px
+        img
+          width: 50px
+          height: 50px
+    .slick-center
+      padding-top: 0
+  .burger
+    display: flex
+    order: 1
+  .gallery
+    padding-top: 50px
+  .header
+    &__container
+      width: 100%
+      padding: 0 1rem
+    &__logo
+      width: 70px
+      height: 70px
+      transition: all 0.25s linear
+      &-active
+        transform: translateY(-150%)
+      &-link, &_link
+        width: 70px
+        height: 70px
+        transform: translateY(0)
+        img
+          width: 70px
+          height: 70px
+    &__child-center, &__social, &-list
+      display: none
+    &__social
+      text-align: center
+    &__language
+      justify-self: flex-end
+      margin-left: auto
+      margin-right: 25px
+    &__language
+      select
+        font-size: 14px
+  .mobile__part
+    &-active
+      top: 80px
+      opacity: 1
+      visibility: visible
+      height: 100%
+      width: 100%
+      .header__child-center, .header__social, .header-list
+        display: block
+      .header-list__item
+        text-align: center
+        padding-left: 0
+      .header__child-center
+        text-align: center
+        margin: 20px 0
+  .gallery
+    .slick-prev
+      left: -20px
+      &:hover
+        left: -15px
+    .slick-next
+      right: -20px
+      &:hover
+        right: -15px
+    .slick-arrow
+      img
+        width: 50px
+        height: 50px
+  .studio
+    &-icon
+      height: 346px
+      &-karlson
+        top: 40px
+@media screen and (max-width: 767px)
+  .mobile__part
+    &-active
+      top: 50px
+  .header
+    &__container
+      height: 50px
+    &__logo
+      width: 50px
+      height: 50px
+      &-link, &_link
+        width: 50px
+        height: 50px
+        transform: translateY(22.5px)
+        img
+          width: 50px
+          height: 50px
+  .gallery
+    &__item
+      height: 350px
+    .slick-dots
+      bottom: 10px
+  .news
+    //border-bottom-left-radius: 75px
+    //border-bottom-right-radius: 75px
+    padding-bottom: 60px
+    .slick-dots
+      bottom: -30px
+    &__image
+      margin-bottom: 20px
+    &__count
+      display: none
+    &__arrows
+      top: 40%
+      transform: translateY(-40%)
+    &__title
+      font-size: 40px
+      padding-top: 40px
+
+  .studio
+    &__title
+      font-size: 40px
+      padding-top: 40px
+      margin-bottom: 5px
+    &__link
+      width: 150px
+      height: 30px
+      font-size: 10px
+      margin: 25px auto
+    &__text
+      width: 280px
+      height: 250px
+      color: #ffffff
+      font-family: $proba-pro-medium
+      font-size: 18px
+      line-height: 25px
+      margin: auto
+    &-icon
+      height: 114px
+      &-bird
+        width: 28px
+        height: 30px
+      &-karlson
+        width: 132px
+        height: 114px
+        top: 0
+@media screen and (max-width: 580px)
+  .gallery
+    &__item
+      height: 280px
+@media screen and (max-width: 425px)
+  .gallery, .news
+    .slick-dots
+      li
+        button
+          width: 5px
+          height: 5px
+  .news
+    &__image
+      img
+        width: 250px
+        height: 250px
+  .studio
+    &__description
+      max-width: 100%
+    &__text
+      width: 100%
+
+@media screen and (max-width: 350px)
+  .gallery
+    &__item
+      height: 200px
+  .news
+    &__text
+      font-size: 18px
+      &-lighten
+        font-size: 16px
+      &-normal
+        line-height: 20px
+        font-size: 18px
+    &__image
+      img
+        width: 200px
+        height: 200px
