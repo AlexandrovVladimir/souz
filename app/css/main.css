@@ -563,7 +563,8 @@
     .studio-icons-karlson {
       position: absolute;
       right: 101px;
-      bottom: 17px; }
+      bottom: 17px;
+      z-index: 1; }
 
 /*/ studio */
 /* PROJECTS SECTION */
@@ -675,7 +676,10 @@
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 72px;
     line-height: 70px;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    position: absolute;
+    left: 1rem;
+    top: 0; }
   .projects__info {
     color: #383838;
     font-family: "ProbaPro-Regular", sans-serif;
@@ -710,6 +714,48 @@
       width: 100%; }
 
 /*/ projects */
+.tabs-container {
+  position: relative;
+  padding: 0 1rem; }
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+ul.tabs li {
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer; }
+
+ul.tabs li.current {
+  background: #ededed;
+  color: #222; }
+
+.tab-content {
+  display: none;
+  padding: 15px; }
+
+.tab-link {
+  font-size: 1rem; }
+
+.tab-content.current {
+  display: inherit; }
+
 @font-face {
   font-family: "ProbaPro-Regular";
   src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Союзмультфильм. Главная страница</title>
+  <title>Союзмультфильм. Главная страница</title>
 
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 
-	<meta property="og:image" content="img/favicon/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <meta property="og:image" content="img/favicon/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	
 </head>
 
@@ -286,72 +287,85 @@
   <section class="projects-purple">
     <div class="projects">
       <div class="projects__container">
-        <div class="projects__title">Проекты</div>
-        <div class="projects__info">
-          Золотую коллекцию всеми любимых мультипликационных шедевров вы можете посмотреть на нашем сайте онлайн бесплатно и в хорошем качестве!
+        <div class="projects__tabs tabs-container">
+          <div class="projects__title">Проекты</div>
+          <ul class="tabs">
+            <li class="tab-link current" data-tab="tab-1">Tab One</li>
+            <li class="tab-link" data-tab="tab-2">Tab Two</li>
+          </ul>
         </div>
-        <div class="projects__arrows">
-          <div class="projects__arrows-wrap">
-            <span class="projects__arrows-left"><img src="img/left.png" alt="left"></span>
-            <span class="projects__arrows-right"><img src="img/right.png" alt="right"></span>
+        <div id="tab-1" class="tab-content current">
+          <div class="projects__info">
+            Золотую коллекцию всеми любимых мультипликационных шедевров вы можете посмотреть на нашем сайте онлайн бесплатно и в хорошем качестве!
+          </div>
+          <div class="projects__arrows">
+            <div class="projects__arrows-wrap">
+              <span class="projects__arrows-left"><img src="img/left.png" alt="left"></span>
+              <span class="projects__arrows-right"><img src="img/right.png" alt="right"></span>
+            </div>
+          </div>
+          <div class="projects__viewport">
+            <div class="projects__item">
+              <div class="projects__image">
+                <img src="img/project1.png" alt="Простоквашино">
+              </div>
+              <div class="projects__description">
+                <a href="" class="projects__link">Трое из Простоквашино</a>
+                <span class="projects__text">
+          Режиссер: Попов В.
+        </span>
+                <span class="projects__text">
+          Сценарист: Успенский Э.
+        </span>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__image">
+                <img src="img/project2.png" alt="Возвращение блудного попугая">
+              </div>
+              <div class="projects__description">
+                <a href="" class="projects__link">Возвращение блудного попугая</a>
+                <span class="projects__text">
+          Режиссер: Караваев В.
+        </span>
+                <span class="projects__text">
+          Сценарист: Курляндский А., Караваев В.
+        </span>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__image">
+                <img src="img/project3.png" alt="Бременские музыканты">
+              </div>
+              <div class="projects__description">
+                <a href="" class="projects__link">Бременские музыканты</a>
+                <span class="projects__text">
+          Режиссер: Ковалевская И., Ливанов В.
+        </span>
+                <span class="projects__text">
+          Сценарист: Ливанов В., Энтин Ю.
+        </span>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__image">
+                <img src="img/project3.png" alt="Бременские музыканты">
+              </div>
+              <div class="projects__description">
+                <a href="" class="projects__link">Бременские музыканты</a>
+                <span class="projects__text">
+          Режиссер: Ковалевская И., Ливанов В.
+        </span>
+                <span class="projects__text">
+          Сценарист: Ливанов В., Энтин Ю.
+        </span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="projects__viewport">
-          <div class="projects__item">
-            <div class="projects__image">
-              <img src="img/project1.png" alt="Простоквашино">
-            </div>
-            <div class="projects__description">
-              <a href="" class="projects__link">Трое из Простоквашино</a>
-              <span class="projects__text">
-            Режиссер: Попов В.
-          </span>
-              <span class="projects__text">
-            Сценарист: Успенский Э.
-          </span>
-            </div>
-          </div>
-          <div class="projects__item">
-            <div class="projects__image">
-              <img src="img/project2.png" alt="Возвращение блудного попугая">
-            </div>
-            <div class="projects__description">
-              <a href="" class="projects__link">Возвращение блудного попугая</a>
-              <span class="projects__text">
-            Режиссер: Караваев В.
-          </span>
-              <span class="projects__text">
-            Сценарист: Курляндский А., Караваев В.
-          </span>
-            </div>
-          </div>
-          <div class="projects__item">
-            <div class="projects__image">
-              <img src="img/project3.png" alt="Бременские музыканты">
-            </div>
-            <div class="projects__description">
-              <a href="" class="projects__link">Бременские музыканты</a>
-              <span class="projects__text">
-            Режиссер: Ковалевская И., Ливанов В.
-          </span>
-              <span class="projects__text">
-            Сценарист: Ливанов В., Энтин Ю.
-          </span>
-            </div>
-          </div>
-          <div class="projects__item">
-            <div class="projects__image">
-              <img src="img/project3.png" alt="Бременские музыканты">
-            </div>
-            <div class="projects__description">
-              <a href="" class="projects__link">Бременские музыканты</a>
-              <span class="projects__text">
-            Режиссер: Ковалевская И., Ливанов В.
-          </span>
-              <span class="projects__text">
-            Сценарист: Ливанов В., Энтин Ю.
-          </span>
-            </div>
+        <div id="tab-2" class="tab-content">
+          <div class="projects__info">
+            Золотую коллекцию всеми любимых мультипликационных шедевров вы можете посмотреть на нашем сайте онлайн бесплатно и в хорошем качестве!
           </div>
         </div>
       </div>
@@ -371,10 +385,12 @@
 
 
 
-
   <script src="js/libs.min.js"></script>
-  <script src="js/navigation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/tabs-projects.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/studio-more.js"></script>
   <script src="js/logo.js"></script>
 </body>
 </html>

@@ -222,6 +222,7 @@
     .studio-icons-karlson {
       position: absolute;
       right: 101px;
-      bottom: 17px; }
+      bottom: 17px;
+      z-index: 1; }
 
 /*/ studio */
