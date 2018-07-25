@@ -5,7 +5,9 @@
 @import 'fonts'
 
 
-
+/* studio-about */
+.studio-bg-orange
+  width: 100%
 .studio-about
   background-color: #fff
   position: fixed
@@ -17,6 +19,7 @@
   visibility: hidden
   transition: all 0.5s linear
   z-index: 4
+  overflow-x: hidden
   &-active
     left: 0
     opacity: 1
@@ -31,6 +34,16 @@
       clear: both
     &-yellow
       background-color: #fdb814
+    &-coral
+      background-color: #00abcc
+      &-after
+        content: ''
+        display: table
+        clear: both
+      .pig
+        float: right
+        padding-right: 140px
+        margin-bottom: 14px
   &__close
     background: #383838 url("../img/close.svg") no-repeat center
     border-radius: 50%
@@ -45,6 +58,17 @@
     line-height: 50px
     letter-spacing: 0.21px
     text-align: center
+    &-mini
+      background: #00abcc
+      color: #ffffff
+      font-family: $proba-pro-bold
+      font-size: 42px
+      line-height: 48px
+      //position: absolute
+      //top: 110px
+      //left: 50%
+      //transform: translateX(-50%)
+      width: 100%
   &__description
     color: #ffffff
     font-size: 32px
@@ -54,15 +78,76 @@
     margin: 60px auto
     text-align: center
     position: relative
-  .studio-about-icon
-    &-vinni
+    padding-bottom: 113px
+  &__images
+    position: relative
+    .header__logo_link-studio
+      display: inline-block
+      border-radius: 50%
+      width: 120px
+      height: 117px
+      background: #00abcc url(../img/logo-text.png) no-repeat center
+      transition: background-color 0.25s linear
       position: absolute
+      top: 20px
+      left: 140px
+    .studio-bg-yellow
+      width: 100%
+    .studio-about-img
       left: 50%
+      bottom: -35px
       transform: translateX(-50%)
+      &-absolute
+        position: absolute
+  &__bottom
+    font-size: 0
+    clear: both
+    position: relative
+    margin-top: 130px
+    .studio-bg-coral
+      width: 100%
+    .header__social
+      img
+        margin: 0 5px
+    &_text
+      color: #ffffff
+      font-family: $proba-pro-regular
+      font-size: 20px
+      line-height: 30px
+      max-width: 680px
+      margin: 40px auto
+  &__share
+    color: #383838
+    font-family: $proba-pro-regular
+    font-size: 18px
+    line-height: 26px
+    margin-right: 15px
+  &__social
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+  &__video
+    background-color: #000
+    margin: 140px auto 0
+    width: 1160px
+    height: 660px
+    .video__viewport
+      width: 100%
+      height: 100%
+    .video-frame
+      margin: auto
+      width: 100%
+      height: 100%
+
+/*/ studio-about */
 /* studio */
 
 .studio
   background-color: #f3762e
+  padding-bottom: 160px
+  &-yellow
+    background-color: #bdd747
   &__container
     width: 1200px
     margin: auto
@@ -103,15 +188,15 @@
     height: 50px
     border-radius: 45px
     background-color: #ffffff
-  &-icon
+  &-icons
+    font-size: 0
     position: relative
-    height: 306px
     &-bird
       position: absolute
-      left: 0
-      bottom: 0
+      left: -50px
+      bottom: -20px
     &-karlson
       position: absolute
-      right: 15px
-      bottom: 0
+      right: 101px
+      bottom: 17px
 /*/ studio */

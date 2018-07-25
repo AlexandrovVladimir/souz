@@ -1,3 +1,8 @@
+@media screen and (max-width: 1600px)
+  .studio-icons-karlson
+    bottom: -60px
+    right: 50%
+    transform: translateX(50%)
 @media screen and (max-width: 1300px)
   .gallery
     .slick-prev
@@ -28,6 +33,12 @@
   .header, .studio
     &__container
       width: 991px
+  .studio-about
+    &__video
+      background-color: #fff
+      width: 100%
+      padding: 0 1rem
+
 @media screen and (max-width: 1100px)
   .news
     &__container
@@ -37,6 +48,23 @@
         width: 220px
         height: 220px
 @media screen and (max-width: 991px)
+  .studio-about
+    &__row
+      &-coral
+        .pig
+          padding-right: 0
+    &__images
+      .studio-about-img
+        bottom: -15px
+      .header__logo_link-studio
+        display: none
+    &__title
+      font-size: 40px
+    &__video
+      height: 500px
+    &__social
+      .header__social
+        display: block
   .studio
     &__container
       width: 100%
@@ -85,6 +113,8 @@
       transition: all 0.25s linear
       &-active
         transform: translateY(-150%)
+      &_link
+        background-size: 75%
       &-link, &_link
         width: 70px
         height: 70px
@@ -136,7 +166,7 @@
       height: 346px
       &-karlson
         top: 40px
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
   .mobile__part
     &-active
       top: 50px
@@ -159,8 +189,6 @@
     .slick-dots
       bottom: 10px
   .news
-    //border-bottom-left-radius: 75px
-    //border-bottom-right-radius: 75px
     padding-bottom: 60px
     .slick-dots
       bottom: -30px
@@ -193,19 +221,65 @@
       font-size: 18px
       line-height: 25px
       margin: auto
-    &-icon
-      height: 114px
+    &-icons
       &-bird
         width: 28px
         height: 30px
+        bottom: 0
       &-karlson
-        width: 132px
+        width: 250px
+        height: 200px
+        bottom: -40px
+  .studio-about
+    &__row
+      &-coral
+        .pig
+          width: 115px
+          height: 115px
+    &__close
+      width: 40px
+      height: 40px
+    &__video
+      height: 350px
+      margin-top: 40px
+    &__bottom
+      margin-top: 40px
+      &_text
+        font-size: 16px
+        line-height: 24px
+        margin: 0
+        max-width: 100%
+    &__description
+      color: #ffffff
+      font-family: $proba-pro-medium
+      font-size: 18px
+      font-weight: 500
+      line-height: 24px
+      max-width: 100%
+      margin-top: 1rem
+      padding-bottom: 1rem
+    &__title
+      padding: 0 1rem
+      &-mini
+        font-size: 32px
+        line-height: 36px
+        text-align: left
+    &__social
+      justify-content: flex-start
+      margin: 1rem 0
+    &__share
+      font-size: 16px
+    &__images
+      .studio-about-img
+        width: 160px
         height: 114px
-        top: 0
 @media screen and (max-width: 580px)
   .gallery
     &__item
       height: 280px
+  .studio-about
+    &__video
+      height: 160px
 @media screen and (max-width: 425px)
   .gallery, .news
     .slick-dots
@@ -223,6 +297,9 @@
       max-width: 100%
     &__text
       width: 100%
+    &-icons
+      &-bird
+        left: 25px
 
 @media screen and (max-width: 350px)
   .gallery

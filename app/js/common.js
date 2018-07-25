@@ -1,6 +1,6 @@
 (function (){
 
-//  full page slider
+/*  full page slider */
   $('.gallery').slick({
     arrows: true,
     dots: true,
@@ -11,29 +11,9 @@
     nextArrow: '<span class="slick-next"><img src="img/right.png" alt="arrow"></span>',
     prevArrow: '<span class="slick-prev"><img src="img/left.png" alt="arrow"></span>'
   });
-//  full page slider
+/*  full page slider */
 
-// navigation
-  let burger = document.querySelector('.burger');
-  let header = document.querySelector('header');
-  let mobilePart = document.querySelector('.mobile__part');
-
-  burger.addEventListener('click', function() {
-    if (header.classList.contains('header-active')) {
-      header.classList.remove('header-active');
-      header.querySelector('.header__logo').classList.remove('header__logo-active');
-      mobilePart.classList.remove('mobile__part-active');
-      this.classList.remove('burger-active');
-    } else {
-      header.classList.add('header-active');
-      header.querySelector('.header__logo').classList.add('header__logo-active');
-      mobilePart.classList.add('mobile__part-active');
-      this.classList.add('burger-active');
-    }
-  });
-// navigation
-
-//  news slider
+/*  news slider */
   $('.news-list').slick({
     arrows: false,
     dots: false,
@@ -111,9 +91,9 @@
   }
   //count and active slides
 
-//  news slider
+/*/  news slider */
 
-//  section studio
+/*  section studio about */
   const studioLink = document.querySelector('.studio__link');
   const studioAbout = document.querySelector('.studio-about');
   const studioClose = document.querySelector('.studio-about__close');
@@ -135,6 +115,27 @@
     document.body.classList.remove('body-locked');
   });
 
-//  section studio
+/*/  section studio about */
+
+/*  projects slider */
+  $('.projects__viewport').slick({
+    arrows: false,
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1200,
+    nextArrow: '<span class="slick-next"><img src="img/right.png" alt="arrow"></span>',
+    prevArrow: '<span class="slick-prev"><img src="img/left.png" alt="arrow"></span>'
+  });
+  $('.projects__arrows-left').click(function(){
+    $('.projects__viewport').slick('slickPrev');
+  });
+
+  $('.projects__arrows-right').click(function(){
+    $('.projects__viewport').slick('slickNext');
+  });
+/*/  projects slider */
+
 
 })();

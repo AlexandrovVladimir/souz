@@ -45,7 +45,7 @@
             border-radius: 50%;
     width: 120px;
     height: 117px;
-    background-color: #f3762e;
+    background: #f3762e url(../img/logo-text.png) no-repeat center;
     -webkit-transition: background-color 0.25s linear;
     -o-transition: background-color 0.25s linear;
     transition: background-color 0.25s linear; }

@@ -5,11 +5,12 @@
 /* news */
 .news {
   background-color: #4eb748;
-  padding-bottom: 160px;
   overflow: hidden;
   position: relative; }
-  .news__orange {
+  .news-orange {
     background-color: #f3762e; }
+    .news-orange .news-bg-green {
+      width: 100%; }
   .news__arrows {
     cursor: pointer; }
     .news__arrows-right {
