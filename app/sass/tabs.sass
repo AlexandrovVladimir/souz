@@ -1,3 +1,9 @@
+/* TABS */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
 .tabs-container
   position: relative
   padding: 0 1rem
@@ -12,14 +18,23 @@ ul.tabs
 
 ul.tabs li
   background: none
-  color: #222
+  color: #fff
   display: inline-block
-  padding: 10px 15px
+  padding: 15px 25px
   cursor: pointer
+  font-family: $proba-pro-bold
+  font-size: 18px
+  line-height: 20px
+  text-transform: uppercase
+  letter-spacing: 1.5px
+  transition: color 0.3s linear
+  &:hover
+    color: #383838
 
 ul.tabs li.current
-  background: #ededed
-  color: #222
+  border-radius: 25px
+  background-color: #ffffff
+  color: #383838
 
 .tab-content
   display: none

@@ -16,6 +16,12 @@
 @import url(../fonts/ft40/ft40.css);
 @import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
 @import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
 .header {
   background-color: #ffffff;
   position: fixed;
@@ -342,6 +348,123 @@
       opacity: 0.5; }
 
 /*/ news */
+/* news-post */
+.news-post {
+  padding-top: 100px; }
+  .news-post__container {
+    max-width: 1200px;
+    margin: auto; }
+  .news-post__title {
+    color: #383838;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    max-width: 960px;
+    margin: auto; }
+  .news-post__number {
+    opacity: 0.5;
+    color: #383838;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center; }
+  .news-post .header__social {
+    font-size: 0;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 40px 0; }
+    .news-post .header__social img {
+      margin: 0 5px; }
+    .news-post .header__social .studio-about__share {
+      height: 40px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+  .news-post__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .news-post__image, .news-post__description {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  .news-post__image {
+    padding: 0 1rem; }
+    .news-post__image img {
+      width: 100%; }
+  .news-post__description {
+    padding: 0 1rem; }
+  .news-post__text-default {
+    color: #383838;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; }
+    .news-post__text-default:not(:first-child) {
+      margin-bottom: 20px;
+      margin-top: 40px; }
+  .news-post__text-quote {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 40px; }
+  .news-post__text-orange {
+    color: #f3762e; }
+  .news-post__text-mini {
+    font-size: 18px; }
+  .news-post__picture img {
+    width: 100%;
+    height: 320px; }
+  .news-post__picture_text {
+    opacity: 0.5;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px; }
+  .news-post__subtitle {
+    color: #383838;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: -30px; }
+  .news-post__video_text {
+    opacity: 0.5;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px; }
+
+/*/ news-post */
 /* STUDIO SECTION */
 /* studio-about */
 .studio-bg-orange {
@@ -490,7 +613,15 @@
     height: 660px; }
     .studio-about__video .video__viewport {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      position: relative; }
+    .studio-about__video .video-poster {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1; }
     .studio-about__video .video-frame {
       margin: auto;
       width: 100%;
@@ -578,6 +709,8 @@
   .projects-purple {
     background-color: #635eaa;
     font-size: 0; }
+  .projects .slick-slide {
+    text-align: center; }
   .projects__footer {
     position: relative; }
     .projects__footer-text {
@@ -655,7 +788,8 @@
     padding: 10px 1rem 32px;
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
-    transition: all 0.3s linear; }
+    transition: all 0.3s linear;
+    min-height: 200px; }
   .projects__link {
     display: block;
     color: #383838;
@@ -679,7 +813,7 @@
     letter-spacing: 0.5px;
     position: absolute;
     left: 1rem;
-    top: 0; }
+    top: -21px; }
   .projects__info {
     color: #383838;
     font-family: "ProbaPro-Regular", sans-serif;
@@ -714,6 +848,7 @@
       width: 100%; }
 
 /*/ projects */
+/* TABS */
 .tabs-container {
   position: relative;
   padding: 0 1rem; }
@@ -737,14 +872,26 @@ ul.tabs {
 
 ul.tabs li {
   background: none;
-  color: #222;
+  color: #fff;
   display: inline-block;
-  padding: 10px 15px;
-  cursor: pointer; }
+  padding: 15px 25px;
+  cursor: pointer;
+  font-family: "ProbaPro-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear; }
+  ul.tabs li:hover {
+    color: #383838; }
 
 ul.tabs li.current {
-  background: #ededed;
-  color: #222; }
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  background-color: #ffffff;
+  color: #383838; }
 
 .tab-content {
   display: none;
@@ -756,6 +903,127 @@ ul.tabs li.current {
 .tab-content.current {
   display: inherit; }
 
+/* VACANCIES SECTION */
+/* vacancies */
+.vacancies {
+  background: #635eaa; }
+  .vacancies-wrap {
+    font-size: 0; }
+    .vacancies-wrap .vacancies-bg-purple {
+      width: 100%; }
+  .vacancies__container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative; }
+  .vacancies__title {
+    color: #ffffff;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px; }
+  .vacancies__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    max-width: 760px;
+    margin: auto; }
+  .vacancies__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .vacancies__link {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    display: block;
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 24px;
+    padding: 28.5px 0;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .vacancies__link:hover {
+      background-color: #fff;
+      color: #383838; }
+  .vacancies__footer {
+    padding-top: 80px;
+    text-align: center; }
+    .vacancies__footer-text {
+      color: #ffffff;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 22px; }
+    .vacancies__footer-link {
+      color: #ffffff;
+      display: inline-block;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+      text-decoration: underline; }
+  .vacancies__icon {
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+/*/ vacancies */
+/* vacancies-post */
+.vacancies-post {
+  background-color: #635eaa;
+  color: #ffffff;
+  padding-top: 100px; }
+  .vacancies-post__container {
+    max-width: 760px;
+    margin: auto; }
+  .vacancies-post__title {
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 42px;
+    line-height: 54px;
+    text-align: center; }
+  .vacancies-post__budget {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 42px;
+    line-height: 54px;
+    text-align: center;
+    padding-bottom: 25px; }
+  .vacancies-post__exp {
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center; }
+  .vacancies-post__row {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding-top: 1rem;
+    margin-top: 1rem; }
+  .vacancies-post__text-opacity {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 1rem; }
+  .vacancies-post__text li span {
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-left: 1rem; }
+
+/*/ vacancies-post */
 @font-face {
   font-family: "ProbaPro-Regular";
   src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
@@ -843,6 +1111,21 @@ a {
     .slick-dots li.slick-active button {
       opacity: 1; }
 
+.fancybox-content {
+  padding: 0 !important; }
+
+.fancybox-close-small {
+  width: 50px !important;
+  height: 50px !important;
+  background: #383838 !important;
+  -webkit-border-radius: 50% !important;
+          border-radius: 50% !important;
+  color: #fff !important;
+  top: 40px !important;
+  right: 40px !important; }
+  .fancybox-close-small svg {
+    opacity: 1 !important; }
+
 @media screen and (max-width: 1600px) {
   .studio-icons-karlson {
     bottom: -60px;
@@ -850,6 +1133,14 @@ a {
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
             transform: translateX(50%); } }
+
+@media screen and (max-width: 1400px) {
+  .vacancies__icon {
+    left: -15px;
+    width: 250px; }
+    .vacancies__icon img {
+      width: 100%;
+      height: 100%; } }
 
 @media screen and (max-width: 1300px) {
   .gallery .slick-prev {
@@ -872,9 +1163,33 @@ a {
       right: -35px; }
   .news__image img {
     width: 280px;
-    height: 280px; } }
+    height: 280px; }
+  .projects__container {
+    width: 1000px; }
+  .projects__item {
+    max-width: 300px; }
+  .projects__arrows-left {
+    left: -45px; }
+    .projects__arrows-left:hover {
+      left: -35px; }
+  .projects__arrows-right {
+    right: -45px; }
+    .projects__arrows-right:hover {
+      right: -35px; } }
 
 @media screen and (max-width: 1200px) {
+  .projects__container {
+    max-width: 100%; }
+  .projects__footer-text {
+    top: 0; }
+    .projects__footer-text-down {
+      top: auto;
+      bottom: 5px; }
+  .vacancies__container {
+    padding: 0 1rem; }
+  .vacancies__icon {
+    left: 0;
+    width: 200px; }
   .header__container, .studio__container {
     width: 991px; }
   .studio-about__video {
@@ -889,7 +1204,42 @@ a {
     width: 220px;
     height: 220px; } }
 
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+  .projects__link {
+    font-size: 28px; }
+  .projects__desciption {
+    min-height: 221px; }
+  .projects__item {
+    max-width: 250px; } }
+
 @media screen and (max-width: 991px) {
+  .projects__item {
+    max-width: 320px; }
+  .projects__info {
+    margin: auto;
+    text-align: center;
+    padding: 1rem; }
+  .projects__arrows {
+    top: 60%; }
+    .projects__arrows-left {
+      left: -20px; }
+      .projects__arrows-left:hover {
+        left: -15px; }
+      .projects__arrows-left img {
+        width: 50px;
+        height: 50px; }
+    .projects__arrows-right {
+      right: -20px; }
+      .projects__arrows-right:hover {
+        right: -15px; }
+      .projects__arrows-right img {
+        width: 50px;
+        height: 50px; }
+  .vacancies__icon {
+    top: auto;
+    bottom: -105px;
+    left: 1rem;
+    width: 80px; }
   .studio-about__row-coral .pig {
     padding-right: 0; }
   .studio-about__images .studio-about-img {
@@ -1007,6 +1357,18 @@ a {
     .studio-icon-karlson {
       top: 40px; } }
 
+@media screen and (max-width: 850px) {
+  .projects__title {
+    line-height: 1;
+    position: static;
+    text-align: center; }
+  .projects ul.tabs {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px; } }
+
 @media screen and (max-width: 768px) {
   .mobile__part-active {
     top: 50px; }
@@ -1044,6 +1406,24 @@ a {
     .news__title {
       font-size: 40px;
       padding-top: 40px; }
+  .news-post__container {
+    padding: 0 1rem; }
+  .news-post__title {
+    text-align: left;
+    max-width: 100%; }
+  .news-post__number {
+    text-align: left; }
+  .news-post__content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .news-post__image, .news-post__description {
+    text-align: left;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
   .studio__title {
     font-size: 40px;
     padding-top: 40px;
@@ -1110,16 +1490,149 @@ a {
     font-size: 16px; }
   .studio-about__images .studio-about-img {
     width: 160px;
-    height: 114px; } }
+    height: 114px; }
+  .vacancies__title {
+    font-size: 40px;
+    line-height: 30px;
+    padding-bottom: 35px;
+    padding-top: 35px; }
+  .vacancies__link {
+    font-size: 18px;
+    padding: 12.5px 0; }
+  .vacancies__footer {
+    padding-top: 25px;
+    padding-bottom: 50px; }
+  .vacancies-post {
+    padding: 70px 1rem;
+    max-width: 100%; }
+    .vacancies-post__title {
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left; }
+    .vacancies-post__budget {
+      font-size: 32px;
+      line-height: 40px;
+      text-align: left; }
+    .vacancies-post__exp {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: left; }
+    .vacancies-post__text li span {
+      font-size: 16px;
+      line-height: 24px; }
+    .vacancies-post__footer {
+      text-align: left; }
+    .vacancies-post .vacancies__footer-link {
+      margin-bottom: 0; }
+  .projects {
+    padding-top: 60px;
+    padding-bottom: 75px; }
+    .projects__title {
+      font-size: 40px;
+      line-height: 30px; }
+    .projects__footer-text {
+      color: #383838;
+      opacity: 0.5;
+      font-size: 14px;
+      line-height: 20px;
+      top: -50px;
+      width: 100%; }
+      .projects__footer-text a {
+        color: #383838;
+        opacity: 0.5;
+        font-size: 14px; }
+      .projects__footer-text-down {
+        color: #383838;
+        opacity: 0.5;
+        font-size: 14px;
+        line-height: 20px;
+        top: auto;
+        bottom: 5px; }
+    .projects__arrows {
+      top: 67.5%; }
+    .projects__description {
+      min-height: auto; }
+    .projects__text {
+      display: none; }
+    .projects__link {
+      font-size: 18px;
+      line-height: 20px; }
+    .projects__item {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 180px;
+          -ms-flex: 0 0 180px;
+              flex: 0 0 180px;
+      max-width: 180px; }
+      .projects__item img {
+        height: 120px; }
+    .projects__info {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0;
+      margin-bottom: 40px; }
+    .projects ul.tabs li {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.67px;
+      padding: 5px 15px; }
+    .projects .slick-list {
+      padding-bottom: 50px; }
+    .projects .slick-dots {
+      bottom: 0; } }
 
 @media screen and (max-width: 580px) {
   .gallery__item {
     height: 280px; }
   .studio-about__video {
-    height: 160px; } }
+    height: 160px; }
+  .fancybox-close-small {
+    top: 1rem !important;
+    right: 1rem !important; }
+  .news-post {
+    padding-top: 50px; }
+    .news-post__title {
+      font-size: 32px;
+      line-height: 36px; }
+    .news-post .header__social {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .news-post__image img {
+      width: 240px;
+      height: 240px; }
+    .news-post__text-default {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+    .news-post__text-quote {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px; }
+    .news-post__text-mini {
+      font-size: 16px;
+      line-height: 22px; }
+    .news-post__description {
+      padding: 0; }
+    .news-post__number {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px; }
+    .news-post__subtitle {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px; }
+    .news-post__picture img {
+      height: auto; }
+    .news-post__picture_text, .news-post__video_text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px; } }
 
 @media screen and (max-width: 425px) {
-  .gallery .slick-dots li button, .news .slick-dots li button {
+  .gallery .slick-dots li button, .news .slick-dots li button, .projects .slick-dots li button {
     width: 5px;
     height: 5px; }
   .news__image img {
@@ -1144,4 +1657,15 @@ a {
       font-size: 18px; }
   .news__image img {
     width: 200px;
-    height: 200px; } }
+    height: 200px; }
+  .vacancies__icon {
+    bottom: -80px;
+    left: 1rem; }
+  .projects ul.tabs li {
+    padding: 5px 10px;
+    font-size: 9px; }
+  .projects__footer-text {
+    top: -75px; }
+    .projects__footer-text-down {
+      top: auto;
+      bottom: 30px; } }

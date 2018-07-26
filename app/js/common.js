@@ -102,7 +102,26 @@
     slidesToScroll: 1,
     speed: 1200,
     nextArrow: '<span class="slick-next"><img src="img/right.png" alt="arrow"></span>',
-    prevArrow: '<span class="slick-prev"><img src="img/left.png" alt="arrow"></span>'
+    prevArrow: '<span class="slick-prev"><img src="img/left.png" alt="arrow"></span>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500
+        }
+      },
+    ]
   });
   $('.projects__arrows-left').click(function(){
     $('.projects__viewport').slick('slickPrev');
