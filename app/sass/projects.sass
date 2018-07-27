@@ -6,6 +6,7 @@
 
 
 /* projects */
+
 .projects
   background-color: #bdd747
   padding-top: 148px
@@ -49,7 +50,6 @@
     flex-wrap: wrap
   &__item
     cursor: pointer
-    flex: 0 0 320px
     max-width: 320px
     &:hover
       .projects__description
@@ -129,3 +129,60 @@
       width: 100%
 
 /*/ projects */
+
+/* projects popup */
+.fancybox-slide
+  .projects-popup
+    width: 100%
+    height: 100%
+    &-gallery
+      background: #bdd747 !important
+      padding-left: 140px
+      padding-right: 140px
+      display: flex
+      justify-content: flex-start
+    &__left
+      float: left
+      width: 40%
+    &__right
+      float: left
+      width: 60%
+    &__border-img
+      padding-top: 100px
+      text-align: center
+    &__title
+      color: #383838
+      font-family: $proba-pro-bold
+      font-size: 42px
+      line-height: 48px
+      text-align: left  !important
+      padding-top: 100px
+      max-width: 545px
+    &__release
+      color: #ffffff
+      font-family: $proba-pro-regular
+      font-size: 18px
+      line-height: 26px
+      margin-top: 20px
+      margin-bottom: 40px
+    &__writer
+      color: rgba(0,0,0,0.3)
+      font-family: $lucida-regular
+      font-size: 18px
+      line-height: 26px
+    &__text
+      color: rgb(0,0,0)
+      font-family: $lucida-regular
+      font-size: 18px
+      line-height: 26px
+      margin-top: 21px
+      max-width: 545px
+    .header__social
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: flex-start
+      margin-top: 1rem
+      img
+        margin: 0 5px
+/*/ projects popup */

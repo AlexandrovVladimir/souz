@@ -79,6 +79,9 @@
 
 /*/ vacancies */
 /* vacancies-post */
+#vacancies-post {
+  padding: 0; }
+
 .vacancies-post {
   background-color: #635eaa;
   color: #ffffff;

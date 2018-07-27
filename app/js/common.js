@@ -97,7 +97,7 @@
   $('.projects__viewport').slick({
     arrows: false,
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1200,

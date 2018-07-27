@@ -52,15 +52,26 @@
         &:hover
           right: -35px
 @media screen and (max-width: 1200px)
+  .fancybox-slide
+    .projects-popup-gallery
+      padding-left: 1rem
+      padding-right: 1rem
+  .fancybox-button--arrow_left
+    left: 1rem !important
+  .fancybox-button--arrow_right
+    left: calc(1rem + 60px) !important
+  .fancybox-infobar
+    left: 130px !important
   .projects
-    &__container
-      max-width: 100%
     &__footer
       &-text
         top: 0
         &-down
           top: auto
           bottom: 5px
+  .contacts
+    &__container
+      padding: 0 1rem
   .vacancies
     &__container
       padding: 0 1rem
@@ -84,18 +95,33 @@
       img
         width: 220px
         height: 220px
-@media screen and (max-width: 1024px) and (min-width: 992px)
+@media screen and (max-width: 1035px) and (min-width: 992px)
   .projects
+    &__arrows
+      top: 60%
+      &-left
+        left: -20px
+        &:hover
+          left: -15px
+        img
+          width: 50px
+          height: 50px
+      &-right
+        right: -20px
+        &:hover
+          right: -15px
+        img
+          width: 50px
+          height: 50px
     &__link
       font-size: 28px
-    &__desciption
-      min-height: 221px
-    &__item
-      max-width: 250px
 @media screen and (max-width: 991px)
   .projects
+    &__container
+      max-width: 100%
     &__item
       max-width: 320px
+      margin: auto
     &__info
       margin: auto
       text-align: center
@@ -434,7 +460,7 @@
           top: auto
           bottom: 5px
     &__arrows
-      top: 67.5%
+      top: 60%
     &__description
       min-height: auto
     &__text
@@ -464,17 +490,108 @@
       padding-bottom: 50px
     .slick-dots
       bottom: 0
+
+  .contacts
+    padding-top: 0
+    &__telephone
+      font-size: 21px
+    &__address, &__link
+      font-size: 18px
+    &__title
+      font-size: 40px
+      line-height: 30px
+      padding-top: 35px
+    &__description, &__cat
+      flex: 0 0 100%
+      max-width: 100%
+      padding: 0.5rem 0
+    &__cat, &__description
+      font-size: 16px
+      line-height: 24px
+    &__link
+      &-small
+        font-size: 16px
+        line-height: 24px
+    &__telephone
+      &-small
+        font-size: 16px
+        line-height: 24px
+    &__footer
+      &-title
+        font-size: 18px
+        line-height: 24px
+      &-info
+        top: -35px
+        width: 100%
+
+
+  .fancybox-slide
+    .projects-popup
+      &-wrap
+        display: flex
+        flex-wrap: wrap
+      &__left
+        order: 1
+      &__left, &__right
+        float: none
+        width: 100%
+      &__title
+        max-width: 100%
+        font-size: 32px
+        line-height: 38px
+      &__text
+        font-size: 16px
+        line-height: 24px
+        max-width: 100%
+      &__release
+        font-size: 16px
+        line-height: 24px
+      &__writer
+        font-size: 16px
+        line-height: 24px
+      .header__social
+        img
+          width: 30px
+          height: 30px
+        .studio-about__share
+          font-size: 14px
+          line-height: 26px
+
+
+
 @media screen and (max-width: 580px)
+  .contacts
+    &__footer
+      &-info
+        top: 0
+        padding-bottom: 25px
+        padding-left: 1rem
+        padding-right: 1rem
   .gallery
     &__item
       height: 280px
   .studio-about
     &__video
       height: 160px
-
+  .fancybox-slide
+    .projects-popup
+      &__right
+        padding-top: 50px
+      &__title
+        padding-top: 1rem
+      &__border-img
+        padding-top: 1rem
+        img
+          width: 219px
+          height: 280px
+  .fancybox-infobar
+    top: 1.9rem !important
+  .fancybox-button
+    top: 1.4rem !important
   .fancybox-close-small
     top: 1rem !important
     right: 1rem !important
+
   .news-post
     padding-top: 50px
     &__title
@@ -516,6 +633,7 @@
         font-size: 16px
         font-weight: 400
         line-height: 20px
+
 
 @media screen and (max-width: 425px)
   .gallery, .news, .projects

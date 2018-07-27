@@ -56,10 +56,6 @@
             flex-wrap: wrap; }
   .projects__item {
     cursor: pointer;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 320px;
-        -ms-flex: 0 0 320px;
-            flex: 0 0 320px;
     max-width: 320px; }
     .projects__item:hover .projects__description {
       background-color: #635eaa; }
@@ -151,3 +147,76 @@
       width: 100%; }
 
 /*/ projects */
+/* projects popup */
+.fancybox-slide .projects-popup {
+  width: 100%;
+  height: 100%; }
+  .fancybox-slide .projects-popup-gallery {
+    background: #bdd747 !important;
+    padding-left: 140px;
+    padding-right: 140px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .fancybox-slide .projects-popup__left {
+    float: left;
+    width: 40%; }
+  .fancybox-slide .projects-popup__right {
+    float: left;
+    width: 60%; }
+  .fancybox-slide .projects-popup__border-img {
+    padding-top: 100px;
+    text-align: center; }
+  .fancybox-slide .projects-popup__title {
+    color: #383838;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: left  !important;
+    padding-top: 100px;
+    max-width: 545px; }
+  .fancybox-slide .projects-popup__release {
+    color: #ffffff;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .fancybox-slide .projects-popup__writer {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "LucidGrande-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px; }
+  .fancybox-slide .projects-popup__text {
+    color: black;
+    font-family: "LucidGrande-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 21px;
+    max-width: 545px; }
+  .fancybox-slide .projects-popup .header__social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 1rem; }
+    .fancybox-slide .projects-popup .header__social img {
+      margin: 0 5px; }
+
+/*/ projects popup */

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/Circe/stylesheet.css">
 
   <meta property="og:image" content="img/favicon/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -302,7 +302,7 @@
     </div>
     <div class="studio-about__video">
       <div class="video__viewport">
-        <img class="video-poster" src="img/youtube-img.png">
+        <!--<img class="video-poster" src="img/youtube-img.png">-->
         <iframe class="video-frame" src="https://www.youtube.com/embed/nRTJd91G04Q?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
@@ -361,63 +361,152 @@
             </div>
           </div>
           <div class="projects__viewport">
-            <div class="projects__item">
-              <div class="projects__image">
-                <img src="img/project1.png" alt="Простоквашино">
-              </div>
-              <div class="projects__description">
-                <a href="" class="projects__link">Трое из Простоквашино</a>
-                <span class="projects__text">
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-src="#project1" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project1.png" alt="Простоквашино">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Трое из Простоквашино</a>
+                  <span class="projects__text">
                   Режиссер: Попов В.
                 </span>
-                <span class="projects__text">
+                  <span class="projects__text">
                   Сценарист: Успенский Э.
                 </span>
+                </div>
               </div>
             </div>
-            <div class="projects__item">
-              <div class="projects__image">
-                <img src="img/project2.png" alt="Возвращение блудного попугая">
-              </div>
-              <div class="projects__description">
-                <a href="" class="projects__link">Возвращение блудного попугая</a>
-                <span class="projects__text">
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-src="#project2" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project2.png" alt="Возвращение блудного попугая">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Возвращение блудного попугая</a>
+                  <span class="projects__text">
                   Режиссер: Караваев В.
                 </span>
-                <span class="projects__text">
+                  <span class="projects__text">
                   Сценарист: Курляндский А., Караваев В.
                 </span>
+                </div>
               </div>
             </div>
-            <div class="projects__item">
-              <div class="projects__image">
-                <img src="img/project3.png" alt="Бременские музыканты">
-              </div>
-              <div class="projects__description">
-                <a href="" class="projects__link">Бременские музыканты</a>
-                <span class="projects__text">
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-src="#project3" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Возвращение блудного попугаяы">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
                   Режиссер: Ковалевская И., Ливанов В.
                 </span>
-                <span class="projects__text">
+                  <span class="projects__text">
                   Сценарист: Ливанов В., Энтин Ю.
                 </span>
+                </div>
               </div>
             </div>
-            <div class="projects__item">
-              <div class="projects__image">
-                <img src="img/project3.png" alt="Бременские музыканты">
-              </div>
-              <div class="projects__description">
-                <a href="" class="projects__link">Бременские музыканты</a>
-                <span class="projects__text">
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-src="#project4" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Бременские музыканты">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
                   Режиссер: Ковалевская И., Ливанов В.
                 </span>
-                <span class="projects__text">
+                  <span class="projects__text">
                   Сценарист: Ливанов В., Энтин Ю.
                 </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="projects-popup projects-popup-gallery projects-popup-gallery-1" id="project1" style="display: none">
+            <div class="projects-popup-wrap">
+              <div class="projects-popup__left">
+                <div class="projects-popup__title">
+                  Трое из Простоквашино
+                </div>
+                <div class="projects-popup__release">
+                  выпуск 1 – 1984, выпуск 2 – 1987, выпуск 3 – 1988
+                </div>
+                <div class="projects-popup__writer">
+                  Режиссер: Караваев В.
+                </div>
+                <div class="projects-popup__writer">
+                  Сценарист: Курляндский А., Караваев В.
+                </div>
+                <div class="projects-popup__text">
+                  Серия рисованных мультфильмов о приключениях хорошего и доброго, но немного капризного и слегка сварливого попугая Кеши, который, обидевшись на своего друга Вовку, в доме которого живет, улетает на поиски приключений. Конечно же, приключения для Кеши сразу находятся – жить одному не так-то просто, равно как и найти новых друзей – но, к счастью для Кеши и Вовки, возвращение блудного попугая все же состоится. И действительно, хоть «это вам не Таити», лучшего места, чем дом, просто не найти!
+                </div>
+                <div class="header__social">
+                  <a href="" class="studio-about__share">Поделиться:</a>
+                  <a href="#" class="header__social-link">
+                    <img src="img/vk.svg" alt="vkontakte">
+                  </a>
+                  <a href="#" class="header__social-link">
+                    <img src="img/facebook.svg" alt="facebook">
+                  </a>
+                  <a href="#" class="header__social-link">
+                    <img src="img/instagram.svg" alt="instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="projects-popup__right">
+                <div class="projects-popup__border-img">
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="projects-popup projects-popup-gallery projects-popup-gallery-2" id="project2" style="display: none;">
+            <div class="projects-popup-wrap">
+              <div class="projects-popup__left">
+                <div class="projects-popup__title">
+                  Возвращение блудного попугая
+                </div>
+                <div class="projects-popup__release">
+                  выпуск 1 – 1984, выпуск 2 – 1987, выпуск 3 – 1988
+                </div>
+                <div class="projects-popup__writer">
+                  Режиссер: Караваев В.
+                </div>
+                <div class="projects-popup__writer">
+                  Сценарист: Курляндский А., Караваев В.
+                </div>
+                <div class="projects-popup__text">
+                  Серия рисованных мультфильмов о приключениях хорошего и доброго, но немного капризного и слегка сварливого попугая Кеши, который, обидевшись на своего друга Вовку, в доме которого живет, улетает на поиски приключений. Конечно же, приключения для Кеши сразу находятся – жить одному не так-то просто, равно как и найти новых друзей – но, к счастью для Кеши и Вовки, возвращение блудного попугая все же состоится. И действительно, хоть «это вам не Таити», лучшего места, чем дом, просто не найти!
+                </div>
+                <div class="header__social">
+                  <a href="" class="studio-about__share">Поделиться:</a>
+                  <a href="#" class="header__social-link">
+                    <img src="img/vk.svg" alt="vkontakte">
+                  </a>
+                  <a href="#" class="header__social-link">
+                    <img src="img/facebook.svg" alt="facebook">
+                  </a>
+                  <a href="#" class="header__social-link">
+                    <img src="img/instagram.svg" alt="instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="projects-popup__right">
+                <div class="projects-popup__border-img">
+                  <img src="img/parrot.png" alt="Возвращение блудного попугая">
+                </div>
               </div>
             </div>
           </div>
+          <div class="projects-popup projects-popup-gallery projects-popup-gallery-3" id="project3"></div>
+          <div class="projects-popup projects-popup-gallery projects-popup-gallery-4" id="project4"></div>
         </div>
         <div id="tab-2" class="tab-content">
           <div class="projects__info">
@@ -527,9 +616,102 @@
           </div>
         </div>
       </div>
-
     </div>
     <img src="img/vacancies-bg-purple.png" alt="map" class="vacancies-bg-purple">
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__container">
+      <div class="contacts__title">Контакты</div>
+      <div class="contacts__address">
+        ФГУП «Киностудия «Союзмультфильм», 127427,
+      </div>
+      <div class="contacts__address">
+        Москва, ул. Академика Королева, 21, стр. 1
+      </div>
+      <a href="tel: +7 (495) 308-00-32" class="contacts__telephone">
+        +7 (495) 308-00-32
+      </a>
+      <a href="mailto: info@souzmult.com" class="contacts__link">
+        info@souzmult.com
+      </a>
+      <div class="contacts__content">
+        <div class="contacts__content-row">
+          <div class="contacts__cat">
+            Экскурсии в музей
+          </div>
+          <div class="contacts__description">
+            <a href="tel: +7 (495) 308-00-32" class="contacts__telephone-small">
+              +7 (495) 308-00-32
+            </a>
+            <a href="mailto: souzmultclub@souzmult.ru" class="contacts__link-small">
+              souzmultclub@souzmult.ru
+            </a>
+          </div>
+        </div>
+        <div class="contacts__content-row">
+          <div class="contacts__cat">
+            Детский центр «Союзмультклуб»
+          </div>
+          <div class="contacts__description">
+            Курсы анимации для детей, развивающие программы
+            <a href="tel: +7 (495) 308-00-32" class="contacts__telephone-small">
+              +7 (495) 308-00-32
+            </a>
+            <a href="mailto: souzmultclub@souzmult.ru" class="contacts__link-small">
+              souzmultclub@souzmult.ru
+            </a>
+          </div>
+        </div>
+        <div class="contacts__content-row">
+          <div class="contacts__cat">
+            Департамент маркетинга
+          </div>
+          <div class="contacts__description">
+            Кросс-промо, кобрендинг, акции и массовые мероприятия с участием брендов Юлия Тихомирова
+            <a href="mailto: info@souzmult.com" class="contacts__link-small">
+              j.tikhomirova@souzmult.com
+            </a>
+          </div>
+        </div>
+        <div class="contacts__content-row">
+          <div class="contacts__cat">
+            Пресс-служба
+          </div>
+          <div class="contacts__description">
+            Анна Усачева
+            <a href="mailto: a.usacheva@souzmult.com" class="contacts__link-small">
+              a.usacheva@souzmult.com
+            </a>
+          </div>
+        </div>
+        <div class="contacts__content-row">
+          <div class="contacts__cat">
+            Аренда оборудования
+          </div>
+          <div class="contacts__description">
+            Motion capture, студия звукозаписи, хромакейный павильон, комплекс цветокоррекции, сканер для создания цифровых архивов кинопленки 35 и 16 мм, рендер-ферма Алексей Ганков
+            <a href="mailto: a.gankov@souzmult.com" class="contacts__link-small">
+              a.gankov@souzmult.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="contacts-white-bg" src="img/contacts-white-bg.png" alt="white">
+    <div class="contacts__footer">
+      <div class="contacts__footer-info">
+        <div class="contacts__footer-title">
+          © Союзмультфильм, 1936-2018
+        </div>
+        <div class="contacts__footer-text">
+          Положение об антикоррупционной политике
+        </div>
+        <div class="contacts__footer-text">Расшифровка нематериальных активов</div>
+        <div class="contacts__footer-text">Реестр судебных дел</div>
+        <div class="contacts__footer-text">Форма раскрытия информации</div>
+      </div>
+    </div>
   </section>
 
 
