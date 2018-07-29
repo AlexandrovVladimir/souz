@@ -3,8 +3,12 @@
 @import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
 @import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
 /* news */
+#news-post {
+  padding: 1rem; }
+
 .news {
   background-color: #4eb748;
+  padding-bottom: 160px;
   overflow: hidden;
   position: relative; }
   .news-orange {
@@ -39,7 +43,15 @@
   .news .slick-dotted.slick-slider {
     margin-bottom: 0; }
   .news .slick-center {
-    padding-top: 5rem; }
+    padding-bottom: 5rem;
+    -webkit-transform: translateY(5rem);
+        -ms-transform: translateY(5rem);
+            transform: translateY(5rem);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; }
   .news__container {
     width: 1200px;
     margin: auto;

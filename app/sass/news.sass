@@ -6,9 +6,11 @@
 
 /* news */
 
+#news-post
+  padding: 1rem
 .news
   background-color: #4eb748
-  //padding-bottom: 160px
+  padding-bottom: 160px
   overflow: hidden
   position: relative
   &-orange
@@ -40,7 +42,9 @@
   .slick-dotted.slick-slider
     margin-bottom: 0
   .slick-center
-    padding-top: 5rem
+    padding-bottom: 5rem
+    transform: translateY(5rem)
+    transition: transform 0.5s ease-in-out
   &__container
     width: 1200px
     margin: auto

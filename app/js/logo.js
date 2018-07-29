@@ -11,21 +11,21 @@ $(document).ready(function () {
 
         scroll_pos = $(this).scrollTop();
 
-        if (scroll_pos > (galleryH + newsH - 75)) {
+        if (scroll_pos > (galleryH + newsH - 100)) {
             $('.header__logo_link').css('backgroundColor', '#4eb748');
         } else {
             $('.header__logo_link').css('backgroundColor', '#f3762e');
         }
 
-        if (scroll_pos > (galleryH + newsH - 75 + studioH)) {
+        if (scroll_pos > (galleryH + newsH - 100 + studioH)) {
             $('.header__logo_link').css('backgroundColor', '#635eaa');
         }
 
-        if (scroll_pos > (galleryH + newsH - 75 + studioH + projectsH)) {
+        if (scroll_pos > (galleryH + newsH - 100 + studioH + projectsH)) {
            $('.header__logo_link').css('backgroundColor', '#bdd747');
         }
 
-        if (scroll_pos > (galleryH + newsH - 75 + studioH + projectsH + vacanciesH)) {
+        if (scroll_pos > (galleryH + newsH - 100 + studioH + projectsH + vacanciesH)) {
             $('.header__logo_link').css('backgroundColor', '#fdb814');
         }
 

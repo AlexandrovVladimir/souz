@@ -6,7 +6,7 @@
 .projects {
   background-color: #bdd747;
   padding-top: 148px;
-  padding-bottom: 1rem;
+  padding-bottom: 100px;
   overflow: hidden;
   position: relative; }
   .projects-purple {
@@ -53,10 +53,12 @@
             justify-content: space-between;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    position: inherit; }
   .projects__item {
     cursor: pointer;
-    max-width: 320px; }
+    max-width: 320px;
+    position: relative; }
     .projects__item:hover .projects__description {
       background-color: #635eaa; }
     .projects__item:hover .projects__link {

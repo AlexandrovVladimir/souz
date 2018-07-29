@@ -25,6 +25,7 @@ gulp.task('scripts', function() {
 		'./node_modules/tether/dist/js/tether.js',
 		// './node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'./node_modules/slick-carousel/slick/slick.js',
+		'./node_modules/vivus/dist/vivus.min.js',
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
