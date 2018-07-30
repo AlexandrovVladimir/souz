@@ -82,29 +82,29 @@
       </div>
     </div>
     <div class="mobile__part">
-      <div class="header__menu">
-        <ul class="header-list">
-          <li class="header-list__item">
-            <a href="#" class="header-list__link">Новости</a>
+      <div class="header__menu-mobile">
+        <ul class="header-list-mobile">
+          <li class="header-list-mobile__item">
+            <a href="#" class="header-list-mobile__link">Новости</a>
           </li>
-          <li class="header-list__item">
-            <a href="#" class="header-list__link">О студии</a>
+          <li class="header-list-mobile__item">
+            <a href="#" class="header-list-mobile__link">О студии</a>
           </li>
-          <li class="header-list__item">
-            <a href="#" class="header-list__link">Проекты</a>
+          <li class="header-list-mobile__item">
+            <a href="#" class="header-list-mobile__link">Проекты</a>
           </li>
-          <li class="header-list__item">
-            <a href="#" class="header-list__link">Вакансии</a>
+          <li class="header-list-mobile__item">
+            <a href="#" class="header-list-mobile__link">Вакансии</a>
           </li>
-          <li class="header-list__item">
-            <a href="#" class="header-list__link">Контакты</a>
+          <li class="header-list-mobile__item">
+            <a href="#" class="header-list-mobile__link">Контакты</a>
           </li>
         </ul>
       </div>
-      <div class="header__child-center">
+      <div class="header__child-center-mobile">
         <a href="#" class="header__child-center_link">Детский центр</a>
       </div>
-      <div class="header__social">
+      <div class="header__social-mobile">
         <a href="#" class="header__social-link">
           <img src="img/vk.svg" alt="vkontakte">
         </a>
@@ -139,7 +139,7 @@
     </div>
   </section>
 
-  <section class="news-orange">
+  <section class="news-section">
     <div class="news">
       <div class="news__container">
         <div class="news__title">Новости</div>
@@ -264,11 +264,10 @@
         </div>
       </div>
     </div>
-    <!--<img src="img/green-bg.png" alt="green" class="news-bg-green">-->
     <div class="animate-line2" id="line1" data-color="f3762e"></div>
   </section>
 
-  <section class="studio-yellow">
+  <section class="studio-section">
     <div class="studio">
       <div class="studio__container">
         <div class="studio__title">О студии</div>
@@ -304,7 +303,7 @@
     <div class="studio-about__video">
       <div class="video__viewport">
         <!--<img class="video-poster" src="img/youtube-img.png">-->
-        <iframe class="video-frame" src="https://www.youtube.com/embed/nRTJd91G04Q?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video-frame" src="https://www.youtube-nocookie.com/embed/3TBIf36qiGE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     <div class="studio-about__bottom">
@@ -341,7 +340,7 @@
     </div>
   </div>
 
-  <section class="projects-purple">
+  <section class="projects-section">
     <div class="projects">
       <div class="projects__container">
         <div class="projects__tabs tabs-container">
@@ -517,19 +516,18 @@
       </div>
     </div>
     <div class="projects__footer">
-      <!--<img src="img/projects-bg-yellow.png" class="projects-bg-yellow" alt="image">-->
       <div class="projects__footer-text">
         Лицензирование, вопросы приобретения прав на использование образов персонажей брендов
       </div>
       <div class="projects__footer-text projects__footer-text-down">
         Мария Смирнова <br>
-        <a href="#">m.smirnova@souzmult.com</a>
+        <a href="mailto: m.smirnova@souzmult.com">m.smirnova@souzmult.com</a>
       </div>
     </div>
     <div class="animate-line2" id="line3" data-color="635eaa"></div>
   </section>
 
-  <section class="vacancies-wrap">
+  <section class="vacancies-section">
     <div class="vacancies">
       <div class="vacancies__container">
         <div class="vacancies__icon">
@@ -559,7 +557,7 @@
           </a>
         </div>
       </div>
-      <div style="display: none; width: 100%; height: 100%;" id="vacancies-post">
+      <div id="vacancies-post">
         <div class="vacancies-post">
           <div class="vacancies-post__container">
             <div class="vacancies-post__title">2D аниматор</div>
@@ -621,7 +619,11 @@
     </div>
   </section>
 
-  <!--<div id="map" class="map"></div>-->
+  <div class="animate-line" id="line4" data-color="635EAA"></div>
+  <section class="map-section">
+    <div id="map" class="map"></div>
+    <div class="animate-line2" id="line8" data-color="00ABCC"></div>
+  </section>
 
   <section class="contacts">
     <div class="contacts__container">
@@ -717,7 +719,6 @@
     </div>
   </section>
 
-
   <script src="js/libs.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
   <script src="js/RaphaelLib.js"></script>
@@ -727,8 +728,9 @@
   <script src="js/studio-more.js"></script>
   <script src="js/studio-video.js"></script>
   <script src="js/logo.js"></script>
+  <script src="js/animationDivs.js"></script>
 
-  <!--<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>-->
-  <!--<script src="js/map.js"></script>-->
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>

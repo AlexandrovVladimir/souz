@@ -11,7 +11,7 @@
   position: fixed
   width: 100%
   transition: all 2s linear
-  z-index: 2
+  z-index: 5
   &__container
     height: 80px
     width: $header-container
@@ -32,7 +32,7 @@
       width: 120px
       height: 117px
       background: #f3762e url(../img/logo-text.png) no-repeat center
-      transition: background-color 0.25s linear
+      transition: background-color 0.5s linear
   &__part
     //flex: 0 0 calc(100% - 120px)
     flex: 0 0 100%
@@ -41,6 +41,24 @@
     align-items: center
     justify-content: space-between
     padding-left: 60px
+  &-list-mobile
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    &__item
+      flex: 0 0 100%
+    &__link
+      color: #000000
+      display: block
+      font-family: $proba-pro-regular
+      font-size: 18px
+      line-height: 30px
+      text-align: center
+      transition: all 0.3s linear
+      &:hover
+        color: lighten(#000000, 50%)
+        text-decoration: none
   &-list
     display: flex
     align-items: center
@@ -58,6 +76,9 @@
     &__item
       &:not(:first-child)
         padding-left: 25px
+  &__child-center-mobile
+    margin-top: 25px
+    text-align: center
   &__child-center
     &_link
       color: #f3762e
@@ -80,6 +101,13 @@
       line-height: 30px
       letter-spacing: 0.18px
   &__social
+    &-link
+      &:hover, &:focus, &:active
+        outline: none
+        text-decoration: none
+  &__social-mobile
+    margin-top: 25px
+    text-align: center
     &-link
       &:hover, &:focus, &:active
         outline: none
@@ -157,9 +185,10 @@
   height: 0
   opacity: 0
   visibility: hidden
-  transition: all 0.5s linear
   top: 0
-  .header-list
+  transition: all 0.5s ease-in-out
+  width: 100%
+  .header-list, .header-list-mobile
     width: calc(100% - 2rem)
     margin: auto
     &__item

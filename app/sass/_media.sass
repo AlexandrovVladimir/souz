@@ -52,6 +52,14 @@
         &:hover
           right: -35px
 @media screen and (max-width: 1200px)
+  .no-found
+    max-width: 100%
+    padding: 0 1rem
+    &__icon
+      &-top
+        left: 1rem
+      &-bottom
+        right: 1rem
   .fancybox-slide
     .projects-popup-gallery
       padding-left: 1rem
@@ -62,13 +70,6 @@
     left: calc(1rem + 60px) !important
   .fancybox-infobar
     left: 130px !important
-  .projects
-    &__footer
-      &-text
-        top: 0
-        &-down
-          top: auto
-          bottom: 5px
   .contacts
     &__container
       padding: 0 1rem
@@ -116,9 +117,21 @@
     &__link
       font-size: 28px
 @media screen and (max-width: 991px)
+  .no-found
+    &__content
+      text-align: center
+      img
+        width: 35%
+    &__icon
+      &-bottom
+        bottom: 1rem
+      img
+        width: 115px
+        height: 115px
   .projects
     &__container
       max-width: 100%
+      width: 100%
     &__item
       max-width: 320px
       margin: auto
@@ -162,6 +175,8 @@
     &__title
       font-size: 40px
     &__video
+      height: 500px
+    .video-frame
       height: 500px
     &__social
       .header__social
@@ -241,10 +256,10 @@
   .mobile__part
     &-active
       top: 80px
-      opacity: 1
-      visibility: visible
       height: 100%
       width: 100%
+      opacity: 1
+      visibility: visible
       .header__child-center, .header__social, .header-list
         display: block
       .header-list__item
@@ -285,6 +300,14 @@
       justify-content: center
       margin-top: 30px
 @media screen and (max-width: 768px)
+  .no-found
+    &__text
+      font-size: 18px
+      line-height: 25px
+    &__link
+      font-size: 10px
+      width: 100px
+      height: 30px
   .mobile__part
     &-active
       top: 50px
@@ -337,6 +360,7 @@
       max-width: 100%
 
   .studio
+    padding-bottom: 160px
     &__title
       font-size: 40px
       padding-top: 40px
@@ -347,8 +371,6 @@
       font-size: 10px
       margin: 25px auto
     &__text
-      width: 280px
-      height: 250px
       color: #ffffff
       font-family: $proba-pro-medium
       font-size: 18px
@@ -375,6 +397,8 @@
     &__video
       height: 350px
       margin-top: 40px
+    .video-frame
+      height: 350px
     &__bottom
       margin-top: 40px
       &_text
@@ -454,7 +478,6 @@
         opacity: 0.5
         font-size: 14px
         line-height: 20px
-        top: -50px
         width: 100%
         a
           color: #383838
@@ -465,8 +488,6 @@
           opacity: 0.5
           font-size: 14px
           line-height: 20px
-          top: auto
-          bottom: 5px
     &__arrows
       top: 60%
     &__description
@@ -494,10 +515,8 @@
         text-transform: uppercase
         letter-spacing: 0.67px
         padding: 5px 15px
-    .slick-list
-      padding-bottom: 50px
-    .slick-dots
-      bottom: 60px
+    //.slick-dots
+    //  bottom: 60px
 
   .contacts
     padding-top: 0
@@ -566,7 +585,6 @@
           line-height: 26px
 
 
-
 @media screen and (max-width: 580px)
   .contacts
     &__footer
@@ -580,6 +598,8 @@
       height: 280px
   .studio-about
     &__video
+      height: 160px
+    .video-frame
       height: 160px
   .fancybox-slide
     .projects-popup
@@ -645,7 +665,20 @@
         line-height: 20px
     &__container
       padding: 0
+  .projects
+    padding-bottom: 1rem
+    .slick-dots
+      bottom: 0
+    &__footer
+      min-height: 115px
+      &-text
+        top: 1rem
+        &-down
+          top: auto
+          bottom: 1rem
 
+  .map
+    height: 300px
 @media screen and (max-width: 425px)
   .gallery, .news, .projects
     .slick-dots
@@ -693,11 +726,3 @@
       li
         padding: 5px 10px
         font-size: 9px
-    &__footer
-      &-text
-        top: -75px
-        &-down
-          top: auto
-          bottom: 30px
-    .slick-dots
-      bottom: 95px

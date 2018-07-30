@@ -6,16 +6,17 @@
 .projects {
   background-color: #bdd747;
   padding-top: 148px;
-  padding-bottom: 100px;
   overflow: hidden;
   position: relative; }
-  .projects-purple {
+  .projects-section {
     background-color: #635eaa;
     font-size: 0; }
   .projects .slick-slide {
     text-align: center; }
   .projects__footer {
-    position: relative; }
+    background-color: #bdd747;
+    position: relative;
+    min-height: 160px; }
     .projects__footer-text {
       color: #383838;
       font-family: "ProbaPro-Regular", sans-serif;

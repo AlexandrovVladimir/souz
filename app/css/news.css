@@ -8,13 +8,11 @@
 
 .news {
   background-color: #4eb748;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   overflow: hidden;
   position: relative; }
-  .news-orange {
+  .news-section {
     background-color: #f3762e; }
-    .news-orange .news-bg-green {
-      width: 100%; }
   .news__arrows {
     cursor: pointer; }
     .news__arrows-right {

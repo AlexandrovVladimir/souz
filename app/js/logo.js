@@ -1,13 +1,15 @@
 $(document).ready(function () {
 
+    /* logo change background-color */
+
     let scroll_pos = 0;
     $(document).scroll(function() {
         let galleryH = $('.gallery').innerHeight();
-        let newsH = $('.news-orange').innerHeight();
-        let studioH = $('.studio-yellow').innerHeight();
-        let projectsH = $('.projects-purple').innerHeight();
-        let vacanciesH = $('.vacancies-wrap').innerHeight();
-
+        let newsH = $('.news-section').innerHeight();
+        let studioH = $('.studio-section').innerHeight();
+        let projectsH = $('.projects-section').innerHeight();
+        let vacanciesH = $('.vacancies-section').innerHeight();
+        let mapH = $('.map-section').innerHeight();
 
         scroll_pos = $(this).scrollTop();
 
@@ -25,10 +27,8 @@ $(document).ready(function () {
            $('.header__logo_link').css('backgroundColor', '#bdd747');
         }
 
-        if (scroll_pos > (galleryH + newsH - 100 + studioH + projectsH + vacanciesH)) {
+        if (scroll_pos > (galleryH + newsH - 100 + studioH + projectsH + vacanciesH + mapH)) {
             $('.header__logo_link').css('backgroundColor', '#fdb814');
         }
-
-        // console.log(scroll_pos);
     });
 });
